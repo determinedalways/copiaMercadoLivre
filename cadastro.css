@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+
+} 
+
+body {
+    background-image: linear-gradient(to right,#EC058E,#2F4F4F );
+    display: flex;
+    justify-content: center;
+}
+
+.cadastro {
+    border: solid black 1px;
+    width: 500px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    border-radius: 10px;
+    background-color: #EC058E;
+}
+
+form {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+h2 { 
+   display: flex;
+   justify-content: center;
+   margin-top: 10px;
+}
+
+.h2 {
+    display: flex;
+    justify-content: center;
+}
+
+
+.containerInput{
+    display: flex;
+    align-items: center;
+    padding: 0rem 1rem;
+    margin-right: 10px;
+    border-radius: .25rem;
+    height: 40px;
+    width: 100%;
+    background-color: #fff;
+}
+
+
+.containerInput .icone{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.input {
+    border: none;
+    display: flex;
+    align-self: center;
+    outline: none;
+}
+
+
+.input1 { 
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    outline: none;
+}
+
+.label {
+    display: flex;
+    margin-top: 20px;
+    font-size: larger;
+    font-weight: lighter;
+    font-family: cursive;
+}
+
+
+input #checkbox {
+    height: 20px;
+}
+.checkbox{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 20px;
+}
+
+.checkbox2 {
+    height: 20px;
+}
+
+.container-buton {
+    padding: 0 15px
+}
+
+
+#iconeSenha {
+    cursor: pointer;
+}
+
+.checkbox1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.checkbox2 {
+    position: relative;
+    right: 205px;
+    top: 20px;
+}
+
+
+.submit {
+    width: 80%;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    text-align: center;
+    background-color: #2F4F4F;
+    cursor: pointer;
+}
+
+.submit:hover {
+    background-image: linear-gradient(to left,#EC058E,#2F4F4F );
+    transform: scale(1.2);
+}
+
+hr {
+    height: auto;
+}
+
+#dialog {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 200px;
+    transform: translate(-50%,-50%);
+}
+
+
+@media only screen and  (max-width: 767px) { 
+
+    
+}

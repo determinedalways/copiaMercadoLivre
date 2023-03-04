@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Home</title>
+</head>
+<body>
+    <header class="menu">
+        <div id="input-form">
+            <form action=""><input type="search" placeholder="Pesquisar produtos..." id="pesquisar">
+                <img src="img/lupa.png" id="imgBusca" alt="lupa"> </form>
+        <label for="pesquisar"></label>
+    </form>
+        <a href=""></a>
+    </div>
+    </header>
+    <nav class="underMenu"><div >
+<img id="imgGps" src="img/gps.png" alt="gps"><span class="textNav">Informe seu </span>
+        <span >CEP</span>
+        </div>
+<div class="menuNav1">
+    <img id="icone-menu"src="img/icone-menu.png" alt="" onclick="clickHamburger()">
+    <span cLass="menuNav"id="categorias">Categorias<img id = "imgSeta"src="img/seta-para-baixo.png" alt=""> 
+        <ul class="ulCategoria">
+        <li >Xbox</li>
+        <li>Play2</li>
+        <li>Play3</li>
+        <li>Play4</li>
+    </ul></span> 
+    <!-- <ul>
+        <li>FAQ</li>
+        <li>Contato</li>
+        <li>Copa do Mundo</li>
+    </ul> -->
+    <span class="menuNav" id="menuNav1" >Ofertas do dia</span>
+    <span class="menuNav" id="menuNav2">Histórico</span>
+    <span class="menuNav" id="menuNav3">Moda</span>
+    <span class="menuNav" id="menuNav4">Vender</span>
+    <span class="menuNav" id="menuNav5">Contato</span>
+</div>
+<span><a class="link" href="cadastro.html"> Crie sua conta</a></span>
+<span><a class="link" href=""> Entre</a></span>
+<span><a class="link" href="">Compra
+<img src="img/carrinho-de-compras.png"id="imgCarrinho" alt=""></a></span>
+</div>
+    </nav>
+
+    <!-- <nav>
+        <ul>
+            <li>Categorias</li>
+            <ul>
+                <li>Veiculos</li>
+                <li>SuperMercado</li>
+                <li>Tecnologia</li>
+            </ul>
+            <li> Ofertas do dia</li>
+            <li>Histórico</li>
+            <li>Moda</li>
+            <li>Vender</li>
+            <li>Contato</li>
+        </ul>
+    </nav> -->
+    <section class="carousel-wrapper" id="carrosel">
+        <span id="item-1"></span>
+        <span id="item-2"></span>
+        <span id="item-3"></span>
+        <div class="carousel-item item-1">
+            <a href="#item-3" onclick="back()"class="arrow-prev arrow"></a>
+            <a href="#item-2" onclick="next()"  class="arrow-next arrow"></a>
+        </div>
+
+        <div class="carousel-item item-2">
+            <a href="#item-2" onclick="back()"class="arrow-prev arrow"></a>
+            <a href="#item-1" onclick="next()"  class="arrow-next arrow"></a>
+        </div>
+        <div class="carousel-item item-3">
+            <a href="#item-1" onclick="back()"class="arrow-prev arrow"></a>
+            <a href="#item-3" onclick="next()" class="arrow-next arrow"></a>
+        </div>
+    </section>
+    <aside class="aside">
+        <div class="container-pagamento" >
+            <div class="pagamento" >
+                <div class="icone" ></div>
+                <span class="textPagamento">Pagamento rápido e seguro</span>
+                <span class="linkPagamento" id="linkCinza" >Com mercado</span>
+            </div>
+            <div class="pagamento">
+                <a href="" class="linkIcone">
+                <img src="img/icone-cartao.png" class="icone" alt=""></a>
+                <span class="textPagamento"> Até 10 parcelas sem juro</span>
+                <a href="#" class="linkPagamento"> Ver mais</a>
+            </div>
+            <div class="pagamento">
+                <img src="img/icone-mao-terra.png" class="icone"alt="">
+                <span class="textPagamento"> Parcelamento sem cartão</span>
+                <a href="#" class="linkPagamento"> Conheça o Mercado Crédito</a>
+            </div>
+            <div class="pagamento">
+                <img src="img/icone-celular.png" alt="" class="icone">
+                <span class="textPagamento"> Via Pix</span>
+                <a href="#" class="linkPagamento">Ver mais</a>
+            </div>
+            <i> <img src="img/icone-mais.png" class="icone" alt=""></i>
+        </div>
+    </aside>
+    <section>
+        <h2 class="h2Oferta">Oferta do dia</h2>
+        <div class="container-section">
+            <div class="card underTitulo">
+                <img src="img/celular.jfif" alt="">
+                <hr>
+                <span class="spanPreco spanConjunto">R$ 1199<span class="porcento">30% </span> <span class="off">OFF</span></span>
+                <span class="off spanConjunto">10x R$ 67 sem juros</span>
+                <span class="frete spanConjunto" >Frete grátis</span>
+            </div>
+            <div class="card">
+                <img id="notbook-gamer"src="img/notbook-gamer.jfif" alt="">
+                <hr>
+                <span class="spanPreco spanConjunto"> R$ 790 <span class="porcento">30%</span> <span class="off">OFF</span></span>
+                <span class="off spanConjunto">10x R$ 119 sem juros</span>
+                <span class="frete spanConjunto"> Frete grátis</span>
+            </div>
+            <div class="card">
+                <img id="xbox" src="img/xbox.webp" alt="">
+                <hr>
+                <span class="spanPreco spanConjunto">R$ 2.999 <span class="porcento">10% <span class="off">OFF</span></span></span>
+                <span class="off spanConjunto"> 10x R$299 sem juros</span>
+                <span class="frete spanConjunto"> Frete grátis</span>
+            </div>
+        </div>
+        
+    </div>
+
+        <div class="containerTitulo">
+        <h1 class="tituloAssine">Assine o nível 6 <span>R$49 ,99</span> </h1>
+    </div>
+    </section>
+
+    <script src="hamburger.js"></script>
+    <script src="carrosel.js"></script>
+</body>
+</html>

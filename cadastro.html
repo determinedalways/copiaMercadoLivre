@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="cadastro.css">
+    <script src="crud.js"></script>
+    <script src="validacoes.js"></script>
+    <script src="password.js"> </script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+         </script>
+         <!-- <script type="text/javascript">(function(){
+            emailjs.init(process.env.PUBLIC_KEY);
+            })()
+            </script> -->
+</head>
+<body>
+    <main class="cadastro">
+        <form class="input" id="formulario" action="https://form.submit.co/juninho_zimba-net@hotmail.com" method="post">
+            <section class="input1"> 
+                <h2 >Cadastro </h2>
+                <p id="validation"></p>
+                <div class="label" >
+                    <label for="">Nome:</label>
+                    <div class="containerInput">
+                        <input type="text" style="outline : none" class="input"id="nome" minlength="3" required>
+                        <img class="icone"src="img/icone-pessoa.png" alt=""/> 
+                    </div>
+                    
+                </div>
+                <div class="label">
+                    <label for="">Sobrenome:</label>
+                    <span class="containerInput">  
+                    <input type="text" class="input" id="sobreNome" minlength="3" required>
+                    <img class="icone"src="img/icone-pessoa.png" alt="">
+                </span>
+                </div>
+                <div class="label">
+                    <label for="">E-mail:</label>
+                    <span class="containerInput">
+                    <input type="email" class="input" id="email" required>
+                    <img src="img/icone-email.png" class="icone" alt="">
+                </span>
+                </div>
+                <div class="label">
+                    <label for="">Repetir e-mail:</label>
+                    <span class="containerInput">
+                    <input type="email" class="input" id="repetirEmail" required>
+                    <img src="img/icone-email.png" class="icone"alt="">
+                </span>
+                </div>
+                <div class="label">
+                    <label for="">Criar senha:</label>
+                    <span class="containerInput">
+                    <input type="password" class="input" id="senha"required>
+                    <img src="img/senha-olho-fechado.png" onclick="pass()"; id ="iconeSenha"alt="" class="icone">
+                </span>
+                </div>
+                <div class="label">
+                    <label for="">Usuário:</label>
+                    <span class="containerInput">
+                    <input type="text" class="input" id="usuario" required>
+                    <img src="img/icone-usuario.png" alt="" class="icone">
+                </span>
+                </div>
+                <div class="checkbox2">
+                    <input type="checkbox" id="checkbox2"> </div>
+                     Ao cadastrar-me, declaro que sou maior de idade e aceito a 
+                    <a href="#" class="linkTermos">Política de privacidade e os Termos e condições do site </a>
+                <hr>
+                <div class="container-buton">
+                  <button type="submit" onclick="validation()" class="submit">Enviar</button>
+                </div>
+            </section>
+        </form>
+
+    
+</main>
+</body>
+</html>
